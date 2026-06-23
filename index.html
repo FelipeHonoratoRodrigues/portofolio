@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Felipe</title>
+  <meta name="description" content="Portfólio profissional de Felipe com projetos, habilidades e contato em uma página moderna e responsiva." />
+  <meta property="og:title" content="Portfólio Felipe" />
+  <meta property="og:description" content="Projetos, habilidades e experiência em TI, infraestrutura e tecnologia." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=zodiak@400,700&display=swap" rel="stylesheet" />
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+      --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+      --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+      --color-bg: #f7f6f2; --color-surface: #fbfbf9; --color-surface-2: #f1efe9;
+      --color-border: #d4d1ca; --color-divider: #ddd8d2; --color-text: #22201b;
+      --color-text-muted: #6f6c65; --color-text-faint: #a8a49c; --color-text-inverse: #f7f6f2;
+      --color-primary: #0b6b73; --color-primary-hover: #09575d; --color-primary-highlight: #d8e7e5;
+      --color-blue: #165d86; --color-success: #437a22;
+      --radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.875rem; --radius-xl: 1.25rem; --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px rgba(30,28,24,.06); --shadow-md: 0 10px 30px rgba(30,28,24,.08); --shadow-lg: 0 18px 60px rgba(30,28,24,.12);
+      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      --content: 1160px;
+      --font-body: 'General Sans', 'Inter', sans-serif;
+      --font-display: 'Zodiak', 'Georgia', serif;
+    }
+    [data-theme="dark"] {
+      --color-bg: #151412; --color-surface: #1b1a18; --color-surface-2: #23211f;
+      --color-border: #393734; --color-divider: #2a2825; --color-text: #ece8e1;
+      --color-text-muted: #b1aba2; --color-text-faint: #7f7a73; --color-text-inverse: #171513;
+      --color-primary: #63aab3; --color-primary-hover: #7fc0c8; --color-primary-highlight: #203033;
+      --color-blue: #73a6d0; --color-success: #82bb5c;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,.24); --shadow-md: 0 10px 30px rgba(0,0,0,.28); --shadow-lg: 0 18px 60px rgba(0,0,0,.38);
+    }
+    *,:before,:after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    body{font-family:var(--font-body);font-size:var(--text-base);line-height:1.6;background:var(--color-bg);color:var(--color-text);min-height:100vh}
+    img,svg{display:block;max-width:100%;height:auto}
+    a{color:inherit;text-decoration:none}
+    button,input,textarea{font:inherit}
+    button{cursor:pointer;border:none;background:none}
+    :focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+    .skip-link{position:absolute;left:-9999px;top:auto}.skip-link:focus{left:1rem;top:1rem;background:var(--color-primary);color:var(--color-text-inverse);padding:.75rem 1rem;border-radius:var(--radius-md);z-index:100}
+    .container{width:min(calc(100% - 2rem), var(--content));margin-inline:auto}
+    .eyebrow{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.14em;color:var(--color-text-muted)}
+    .section{padding-block:clamp(var(--space-12), 10vw, var(--space-24))}
+    .header{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--color-bg) 82%, transparent);backdrop-filter:blur(16px);border-bottom:1px solid color-mix(in srgb, var(--color-text) 12%, transparent)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0}
+    .brand{display:flex;align-items:center;gap:var(--space-3);font-size:var(--text-sm);font-weight:600}
+    .brand-mark{width:2.25rem;height:2.25rem;padding:.4rem;border:1px solid color-mix(in srgb, var(--color-text) 12%, transparent);border-radius:var(--radius-full);background:var(--color-surface)}
+    .nav-links{display:flex;align-items:center;gap:var(--space-5);font-size:var(--text-sm);color:var(--color-text-muted)}
+    .nav-actions{display:flex;align-items:center;gap:var(--space-3)}
+    .theme-toggle,.ghost-btn,.primary-btn{min-height:44px;padding:.8rem 1rem;border-radius:var(--radius-full);transition:all var(--transition)}
+    .theme-toggle,.ghost-btn{border:1px solid color-mix(in srgb, var(--color-text) 12%, transparent);background:var(--color-surface)}
+    .primary-btn{background:var(--color-primary);color:var(--color-text-inverse);font-weight:600}
+    .primary-btn:hover{background:var(--color-primary-hover)}
+    .ghost-btn:hover,.theme-toggle:hover{background:var(--color-surface-2)}
+    .hero{padding-block:clamp(var(--space-12), 12vw, 9rem) clamp(var(--space-12), 8vw, 7rem)}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:var(--space-10);align-items:end}
+    .hero-copy h1{font-family:var(--font-display);font-size:clamp(2.8rem, 5vw, 5.5rem);line-height:.95;max-width:10ch;margin-top:var(--space-5)}
+    .hero-copy p{max-width:58ch;color:var(--color-text-muted);margin-top:var(--space-6)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:var(--space-4);margin-top:var(--space-8)}
+    .hero-card{padding:var(--space-8);background:linear-gradient(180deg, color-mix(in srgb, var(--color-primary) 7%, var(--color-surface)) 0%, var(--color-surface) 100%);border:1px solid color-mix(in srgb, var(--color-text) 10%, transparent);border-radius:var(--radius-xl);box-shadow:var(--shadow-md)}
+    .hero-card .mini-title{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.14em;color:var(--color-text-muted);margin-bottom:var(--space-5)}
+    .hero-stats{display:grid;gap:var(--space-5)}
+    .stat strong{display:block;font-size:var(--text-xl);line-height:1.1}
+    .stat span{color:var(--color-text-muted);font-size:var(--text-sm)}
+    .grid-2,.projects-grid,.skills-grid,.about-grid,.contact-grid{display:grid;gap:var(--space-6)}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .section-head{display:grid;gap:var(--space-3);margin-bottom:var(--space-8)}
+    .section-head h2{font-family:var(--font-display);font-size:var(--text-xl)}
+    .section-head p{color:var(--color-text-muted);max-width:60ch}
+    .project-card,.skill-card,.about-card,.contact-card{background:var(--color-surface);border:1px solid color-mix(in srgb, var(--color-text) 10%, transparent);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm)}
+    .project-card{padding:var(--space-8);display:grid;gap:var(--space-5)}
+    .project-top{display:flex;justify-content:space-between;gap:var(--space-4);align-items:flex-start}
+    .project-card h3,.skill-card h3,.about-card h3,.contact-card h3{font-size:var(--text-lg);line-height:1.2}
+    .project-card p,.skill-card p,.about-card p,.contact-card p{color:var(--color-text-muted)}
+    .tags{display:flex;flex-wrap:wrap;gap:var(--space-2)}
+    .tag{padding:.45rem .8rem;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);border:1px solid color-mix(in srgb, var(--color-text) 8%, transparent)}
+    .project-link{font-size:var(--text-sm);font-weight:600;color:var(--color-primary)}
+    .projects-grid{grid-template-columns:1.15fr .85fr .95fr}
+    .project-card.featured{grid-row:span 2;min-height:100%}
+    .skill-card,.about-card,.contact-card{padding:var(--space-7)}
+    .skills-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .skill-list{display:flex;flex-wrap:wrap;gap:var(--space-2);margin-top:var(--space-4)}
+    .about-grid{grid-template-columns:1.1fr .9fr}
+    .timeline{display:grid;gap:var(--space-4);margin-top:var(--space-5)}
+    .timeline-item{padding-top:var(--space-4);border-top:1px solid var(--color-divider)}
+    .timeline-item strong{display:block;font-size:var(--text-sm)}
+    .timeline-item span{display:block;font-size:var(--text-xs);color:var(--color-text-faint);margin-top:.2rem}
+    .contact-grid{grid-template-columns:.9fr 1.1fr}
+    .contact-list{display:grid;gap:var(--space-4);margin-top:var(--space-5)}
+    .contact-item{display:flex;flex-direction:column;gap:.2rem;padding:var(--space-4);border-radius:var(--radius-lg);background:var(--color-surface-2)}
+    .contact-item span{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.12em;color:var(--color-text-faint)}
+    form{display:grid;gap:var(--space-4)}
+    label{display:grid;gap:.45rem;font-size:var(--text-sm);font-weight:500}
+    input,textarea{width:100%;padding:1rem;border-radius:var(--radius-lg);border:1px solid color-mix(in srgb, var(--color-text) 12%, transparent);background:var(--color-bg);color:var(--color-text)}
+    textarea{min-height:160px;resize:vertical}
+    .footer{padding:var(--space-8) 0 var(--space-12);border-top:1px solid var(--color-divider)}
+    .footer-row{display:flex;justify-content:space-between;gap:var(--space-4);flex-wrap:wrap;color:var(--color-text-muted);font-size:var(--text-sm)}
+    .accent-line{height:1px;background:linear-gradient(90deg, transparent, color-mix(in srgb, var(--color-primary) 45%, transparent), transparent);margin-block:var(--space-10)}
+    @media (max-width: 980px){
+      .hero-grid,.projects-grid,.skills-grid,.about-grid,.contact-grid,.grid-2{grid-template-columns:1fr}
+      .project-card.featured{grid-row:auto}
+    }
+    @media (max-width: 760px){
+      .nav{align-items:flex-start;flex-direction:column}
+      .nav-links{flex-wrap:wrap;gap:var(--space-3)}
+      .nav-actions{width:100%;justify-content:space-between}
+      .hero-copy h1{max-width:12ch}
+      .hero-actions{flex-direction:column;align-items:flex-start}
+      .primary-btn,.ghost-btn{width:100%;justify-content:center;display:inline-flex}
+    }
+    @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Ir para o início do portfólio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 35V13H28" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M18 22H37V35" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M11 35H37" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Felipe · Portfólio</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema">◐</button>
+        <a class="primary-btn" href="#contato">Falar comigo</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Projetos e portfólio</span>
+          <h1>Infra, suporte e tecnologia com foco em resultado.</h1>
+          <p>
+            Sou Felipe Honorato Rodrigues, estudante do último semestre de Gestão da Tecnologia da Informação, com foco em suporte técnico, infraestrutura, redes, sistemas e desenvolvimento profissional na área de TI.
+            Este modelo já deixa você com uma base forte para apresentar experiência, projetos e contatos de forma profissional.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#projetos">Ver projetos</a>
+            <a class="ghost-btn" href="#contato">Copiar para seus dados</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Resumo profissional">
+          <div class="mini-title">Resumo rápido</div>
+          <div class="hero-stats">
+            <div class="stat"><strong>Infraestrutura</strong><span>Suporte técnico, redes, sistemas e organização de ambientes.</span></div>
+            <div class="stat"><strong>Hardware</strong><span>Montagem, upgrade, diagnóstico e otimização de PCs.</span></div>
+            <div class="stat"><strong>Segurança</strong><span>Boas práticas, controle de acesso e atenção a riscos operacionais.</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="container"><div class="accent-line" aria-hidden="true"></div></div>
+
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Projetos</span>
+          <h2>Trabalhos que mostram seu perfil técnico</h2>
+          <p>Troque os textos abaixo pelos seus projetos reais, acadêmicos ou profissionais. A estrutura já está pronta para destacar contexto, tecnologias e impacto.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card featured">
+            <div class="project-top">
+              <div>
+                <span class="eyebrow">Projeto destaque</span>
+                <h3>Padronização de ambiente de TI</h3>
+              </div>
+              <span class="tag">Infraestrutura</span>
+            </div>
+            <p>Mapeamento de máquinas, organização de acessos, checklist de manutenção e criação de rotina para suporte mais rápido e previsível.</p>
+            <div class="tags">
+              <span class="tag">Windows</span>
+              <span class="tag">Inventário</span>
+              <span class="tag">Documentação</span>
+              <span class="tag">Suporte</span>
+            </div>
+            <a class="project-link" href="#contato">Adicionar resultado obtido →</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <div>
+                <span class="eyebrow">Projeto 02</span>
+                <h3>Diagnóstico e upgrade de estações</h3>
+              </div>
+              <span class="tag">Hardware</span>
+            </div>
+            <p>Análise de gargalos, recomendação de SSD, memória e ajustes de sistema para melhorar estabilidade e desempenho.</p>
+            <div class="tags">
+              <span class="tag">SSD</span>
+              <span class="tag">RAM</span>
+              <span class="tag">Benchmark</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <div>
+                <span class="eyebrow">Projeto 03</span>
+                <h3>Documentação de processos internos</h3>
+              </div>
+              <span class="tag">Gestão</span>
+            </div>
+            <p>Criação de guias operacionais, fluxo de atendimento e base de conhecimento para reduzir retrabalho e acelerar onboarding.</p>
+            <div class="tags">
+              <span class="tag">ITIL</span>
+              <span class="tag">Processos</span>
+              <span class="tag">Knowledge Base</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <div>
+                <span class="eyebrow">Projeto 04</span>
+                <h3>Boas práticas de segurança operacional</h3>
+              </div>
+              <span class="tag">Segurança</span>
+            </div>
+            <p>Aplicação de rotinas de atualização, revisão de permissões e orientação de uso seguro para reduzir exposição a falhas comuns.</p>
+            <div class="tags">
+              <span class="tag">Controle de acesso</span>
+              <span class="tag">Atualização</span>
+              <span class="tag">Risco</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Habilidades</span>
+          <h2>Áreas em que você pode se posicionar bem</h2>
+          <p>Esses blocos ajudam recrutadores e clientes a entender rapidamente sua stack de atuação. Ajuste para refletir suas experiências reais.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Infraestrutura e suporte</h3>
+            <p>Atendimento técnico, organização de ambientes, configuração de sistemas e resolução de problemas do dia a dia.</p>
+            <div class="skill-list">
+              <span class="tag">Windows 10/11</span><span class="tag">Suporte N1/N2</span><span class="tag">Redes básicas</span><span class="tag">Active Directory</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <h3>Hardware e performance</h3>
+            <p>Montagem, análise de compatibilidade, manutenção preventiva e recomendações focadas em custo-benefício.</p>
+            <div class="skill-list">
+              <span class="tag">PC Build</span><span class="tag">Diagnóstico</span><span class="tag">Upgrade</span><span class="tag">Benchmark</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <h3>Organização e gestão</h3>
+            <p>Visão de processos, documentação e acompanhamento de demandas para melhorar controle e eficiência operacional.</p>
+            <div class="skill-list">
+              <span class="tag">Documentação</span><span class="tag">Fluxos</span><span class="tag">Chamados</span><span class="tag">Melhoria contínua</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+        <div class="section-head">
+          <span class="eyebrow">Sobre</span>
+          <h2>Felipe Honorato Rodrigues</h2>
+          <p>
+            Profissional em início de carreira na área de Tecnologia da Informação, buscando oportunidades como Assistente de TI, Assistente de Suporte ou Suporte Técnico Júnior.
+          </p>
+          <div class="about-card">
+            
+            <p>Atualmente no último ano da graduação em Gestão da Tecnologia da Informação pela Estácio. Possuo conhecimentos em suporte técnico, infraestrutura, redes, hardware, software, segurança da informação, computação em nuvem, AWS, Python e Pacote Office.</p>
+          </div>
+        </div>
+        <aside class="about-card">
+          <h3>Linha do tempo</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <strong>Formação em TI</strong>
+              <span>Bacharelado em Gestão da Tecnologia da Informação – Faculdade Estácio (Conclusão prevista: 2026).</span>
+            </div>
+            <div class="timeline-item">
+              <strong>Projeto acadêmico ou pessoal</strong>
+              <span>Conhecimentos em suporte técnico, infraestrutura, redes e sistemas aplicados em estudos e projetos acadêmicos.</span>
+            </div>
+            <div class="timeline-item">
+              <strong>Objetivo atual</strong>
+              <span>Atuar como Assistente de TI, Assistente de Suporte ou Suporte Técnico Júnior.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-head">
+            <span class="eyebrow">Contato</span>
+            <h2>Deixe formas fáceis de falar com você</h2>
+            <p>Substitua os campos pelos seus dados reais. Você também pode trocar o formulário por links diretos para WhatsApp, LinkedIn, GitHub e e-mail.</p>
+          </div>
+          <div class="contact-list">
+            <div class="contact-item"><span>E-mail</span><strong>felipehrodrigues20@gmail.com</strong></div>
+            <div class="contact-item"><span>LinkedIn</span><strong>linkedin.com/in/felipe-honorato-rodrigues-3318a0170</strong></div>
+            <div class="contact-item"><span>Localização</span><strong>São Paulo · Brasil</strong></div>
+          </div>
+        </div>
+        <article class="contact-card">
+          <h3>Mensagem rápida</h3>
+          <p>Esse formulário é visual. Para usar de verdade, conecte a um serviço de formulário ou substitua por um botão de e-mail/WhatsApp.</p>
+          <form>
+            <label>Nome
+              <input type="text" placeholder="Seu nome" />
+            </label>
+            <label>E-mail
+              <input type="email" placeholder="voce@exemplo.com" />
+            </label>
+            <label>Mensagem
+              <textarea placeholder="Escreva uma mensagem curta sobre a oportunidade ou projeto."></textarea>
+            </label>
+            <button class="primary-btn" type="button">Enviar proposta</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>Portfólio base pronto para personalização.</span>
+      <span>Atualize textos, links, projetos e contatos com seus dados reais.</span>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const root = document.documentElement;
+      const toggle = document.querySelector('[data-theme-toggle]');
+      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+      const paint = () => { toggle.textContent = theme === 'dark' ? '☀' : '◐'; toggle.setAttribute('aria-label', theme === 'dark' ? 'Alternar para tema claro' : 'Alternar para tema escuro'); };
+      paint();
+      toggle.addEventListener('click', () => { theme = theme === 'dark' ? 'light' : 'dark'; root.setAttribute('data-theme', theme); paint(); });
+    })();
+  </script>
+</body>
+</html>
